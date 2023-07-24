@@ -10,5 +10,5 @@ func InitRouter() {
 			"message": "pong",
 		})
 	})
-	router.Run(":" + GetSystemConfig().PanelPort)
+	_ = router.Run(":" + GetSystemConfig().PanelPort)
 }
